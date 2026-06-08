@@ -7,7 +7,7 @@ public class Conn {
     public Conn() {
         try {
             Class.forName("org.postgresql.Driver");
-            c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/bank_system_db", "postgres", "Lucky@16");
+            c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/bank_system_db", "postgres", "YourPassword");
             s = c.createStatement();
         } catch(Exception e) {
             System.out.println(e);
